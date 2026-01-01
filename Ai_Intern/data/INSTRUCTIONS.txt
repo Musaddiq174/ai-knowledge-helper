@@ -1,0 +1,76 @@
+================================================================================
+  HOW TO ADD PDF FILES TO THIS FOLDER
+================================================================================
+
+CURRENT LOCATION:
+--------------------------------------------------------------------------------
+This is the "data" folder where you should place your PDF files.
+
+Full path: C:\Users\hp\Desktop\Ai_Intern\data
+
+
+METHOD 1: DRAG AND DROP (Easiest)
+--------------------------------------------------------------------------------
+1. Open File Explorer
+2. Find your PDF files on your computer
+3. Drag them and drop them into this folder
+4. Done!
+
+
+METHOD 2: COPY AND PASTE
+--------------------------------------------------------------------------------
+1. Find your PDF file on your computer
+2. Right-click → Copy
+3. Open this "data" folder
+4. Right-click → Paste
+5. Done!
+
+
+METHOD 3: USE THE HELPER SCRIPT
+--------------------------------------------------------------------------------
+Run this command from the main project folder:
+    python add_pdf_helper.py
+
+Then select option 2 to copy a PDF file interactively.
+
+
+METHOD 4: COMMAND LINE
+--------------------------------------------------------------------------------
+From the main project folder, run:
+    copy "C:\path\to\your\file.pdf" data\
+
+
+================================================================================
+WHAT HAPPENS NEXT?
+================================================================================
+
+After adding PDF files:
+
+1. Run: python interactive_qa.py
+2. Select option 1 to process your documents
+3. Select option 2 to ask questions about your PDFs
+
+
+================================================================================
+EXAMPLE:
+================================================================================
+
+If you have a file called "research_paper.pdf" on your Desktop:
+
+1. Copy it to: C:\Users\hp\Desktop\Ai_Intern\data\research_paper.pdf
+2. Run: python interactive_qa.py
+3. Process and ask questions!
+
+
+================================================================================
+TIPS:
+================================================================================
+
+✓ You can add multiple PDF files - the system will search all of them
+✓ Make sure files have .pdf extension (not .PDF)
+✓ Text-based PDFs work best (not scanned images)
+✓ Files should not be password-protected
+
+
+================================================================================
+

@@ -1,0 +1,65 @@
+================================================================================
+  STEP-BY-STEP POWERSHELL COMMANDS
+================================================================================
+
+STEP 1: Navigate to Main Project Directory
+--------------------------------------------------------------------------------
+cd C:\Users\hp\Desktop\Ai_Intern
+
+
+STEP 2: Check if Dependencies are Installed
+--------------------------------------------------------------------------------
+python -c "import sentence_transformers; print('Dependencies OK')"
+
+
+STEP 3: If Step 2 Fails, Install Dependencies
+--------------------------------------------------------------------------------
+pip install -r requirements.txt
+
+
+STEP 4: Verify PDF File is in Data Folder
+--------------------------------------------------------------------------------
+dir data\*.pdf
+
+
+STEP 5: Process Your PDF Documents (First Time)
+--------------------------------------------------------------------------------
+python -c "from qa_pipeline import RAGPipeline; rag = RAGPipeline(); rag.process_documents('data')"
+
+
+STEP 6: Ask Questions Using Interactive Script
+--------------------------------------------------------------------------------
+python interactive_qa.py
+
+
+STEP 7: Or Ask Questions Directly (One Command)
+--------------------------------------------------------------------------------
+python -c "from qa_pipeline import RAGPipeline; rag = RAGPipeline(); result = rag.ask('What is the main topic?'); print('Answer:', result['answer'])"
+
+
+STEP 8: Start FastAPI Server (Alternative Method)
+--------------------------------------------------------------------------------
+python main.py
+
+
+================================================================================
+  QUICK REFERENCE - Copy and Paste These Commands
+================================================================================
+
+# Go to project folder
+cd C:\Users\hp\Desktop\Ai_Intern
+
+# Check PDF files
+dir data\*.pdf
+
+# Process documents
+python -c "from qa_pipeline import RAGPipeline; RAGPipeline().process_documents('data')"
+
+# Run interactive Q&A
+python interactive_qa.py
+
+# Or start API server
+python main.py
+
+================================================================================
+

@@ -1,0 +1,130 @@
+================================================================================
+  AI KNOWLEDGE HELPER - START HERE
+================================================================================
+
+QUICK START (3 SIMPLE STEPS):
+================================================================================
+
+STEP 1: INSTALL DEPENDENCIES
+--------------------------------------------------------------------------------
+Open PowerShell or Command Prompt in this folder and run:
+
+    pip install -r requirements.txt
+
+This will take a few minutes. Wait for it to complete.
+
+
+STEP 2: ADD YOUR PDF FILES
+--------------------------------------------------------------------------------
+1. Open the "data" folder (it's in this same directory)
+2. Copy your PDF files into the "data" folder
+3. That's it! The system will find them automatically
+
+Example:
+    data/
+      ├── my_document.pdf
+      ├── research_paper.pdf
+      └── report.pdf
+
+
+STEP 3: RUN THE SYSTEM
+--------------------------------------------------------------------------------
+Run this command:
+
+    python interactive_qa.py
+
+Then:
+    1. Select option 1 to process your documents
+    2. Select option 2 to ask questions
+    3. Type your question and press Enter
+    4. Get your answer!
+
+
+================================================================================
+EXAMPLE SESSION:
+================================================================================
+
+$ python interactive_qa.py
+
+    MAIN MENU
+    1. Upload/Process PDF documents
+    2. Ask a question
+    3. View processed documents
+    4. Exit
+    
+    Select an option (1-4): 1
+    
+    [System processes your PDFs...]
+    ✅ Documents processed successfully!
+    
+    Select an option (1-4): 2
+    
+    Enter your question: What is the main topic?
+    
+    [System searches and generates answer...]
+    
+    ANSWER:
+    ======================================================================
+    The main topic is about artificial intelligence and machine learning...
+    
+    Confidence: 85%
+    Sources used: 3
+
+
+================================================================================
+ALTERNATIVE METHODS:
+================================================================================
+
+METHOD 1: Interactive Script (Easiest) ⭐
+    python interactive_qa.py
+
+METHOD 2: Jupyter Notebook (For Learning)
+    jupyter notebook
+    Then open notebook.ipynb
+
+METHOD 3: FastAPI Server (For API)
+    python main.py
+    Then visit http://localhost:8000
+
+METHOD 4: Python Code
+    python example_usage.py
+
+
+================================================================================
+TROUBLESHOOTING:
+================================================================================
+
+Problem: "No module named 'X'"
+Solution: pip install -r requirements.txt
+
+Problem: "No PDF files found"
+Solution: Make sure PDF files are in the "data" folder
+
+Problem: "Vector database not found"
+Solution: Select option 1 first to process documents
+
+Problem: Processing is slow
+Solution: This is normal! First time takes a few minutes.
+
+
+================================================================================
+NEED MORE HELP?
+================================================================================
+
+- Read HOW_TO_USE.md for detailed guide
+- Read README.md for full documentation
+- Check QUICK_START.md for quick reference
+
+
+================================================================================
+READY TO START?
+================================================================================
+
+1. Install: pip install -r requirements.txt
+2. Add PDFs to data/ folder
+3. Run: python interactive_qa.py
+
+That's it! 🚀
+
+================================================================================
+
